@@ -16,3 +16,9 @@ mon_cercle.afficher()
 print("L'aire du cercle est :", mon_cercle.calculer_aire())
 print("Le périmetre du cercle est :", mon_cercle.calculer_perimetre())
 print("------------------------------------------------")
+
+print("{:<10} | {:<10} | {}".format("Attribut", "Carré", "Cercle"))
+print("{:<10} | {:<10} | {}".format("Aire", mon_carre.calculer_aire(), round(mon_cercle.calculer_aire(),0)))
+print("{:<10} | {:<10} | {}".format("Perimètre", mon_carre.calculer_perimetre(), round(mon_cercle.calculer_perimetre(),0)))
+
+print("--------------------- Fin ---------------------")
