@@ -33,8 +33,8 @@
     ],
     "rdv": [
         {
-            "id_ rdv": "1",
-            "id_ patient": "1",
+            "id_rdv": "1",
+            "id_patient": "1",
             "id_medecin": "1",
             "date_rdv": "2024-10-10",
             "heure_debut": "10:00",
@@ -43,8 +43,8 @@
         },
         
         {
-            "id_ rdv": "2",
-            "id_ patient": "1",
+            "id_rdv": "2",
+            "id_patient": "1",
             "id_medecin": "2",
             "date_rdv": "2024-10-17",
             "heure_debut": "11:00",
