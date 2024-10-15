@@ -1,3 +1,5 @@
+import json
+
 class Personne:
     def __init__(self, prenom, nom, adresse, date_naissance, sexe):
         self.prenom = prenom
@@ -30,11 +32,21 @@ class Medecin(Personne):
 class RDV:
     def __init__(self, id_rdv, id_patient, id_medecin, date_rdv, heure_debut, heure_fin, motif):
         self.id_rdv = id_rdv
-        self.patient = id_patient
-        self.medecin = id_medecin
+        self.id_patient = id_patient
+        self.id_medecin = id_medecin
         self.date_rdv = date_rdv
         self.heure_debut = heure_debut
         self.heure_fin = heure_fin
         self.motif = motif
     def afficher(self):
         print(f"ID RDV : {self.id_rdv} avec ID Patient : {self.id_patient} \n vu par ID Médecin {self.id_medecin}, le {self.date_rdv} \n entre {self.heure_debut} et {self.heure_fin} avec motif : {self.motif}")
+
+def lire_donnees(fic):
+    try:
+        with open(fic, "r", encoding="utf-8") as f:
+            return json.load(f)
+        
+    except FileNotFoundError:
+        print(f"Fichier {fic} est inexistant ou illisible")
+        return {}
+
