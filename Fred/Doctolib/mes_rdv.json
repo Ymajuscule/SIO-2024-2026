@@ -1,0 +1,55 @@
+{
+    "medecin": [
+        {
+            "id_medecin": "1",
+            "prenom": "Jean",
+            "nom": "Dupont",
+            "adresse": "40 rue Foch 34000 MONTPELLIER",
+            "date_naissance": "1975-06-15",
+            "sexe": "M",
+            "specialite": "Cardiologue"
+        },
+
+        {
+            "id_medecin": "2",
+            "prenom": "Léa",
+            "nom": "Martin",
+            "adresse": "24 avenue de Montpellier 34790 GRABELS",
+            "date_naissance": "1980-09-22",
+            "sexe": "F",
+            "specialite": "Dermatologue"
+        }
+    ],
+    "patient": [
+        {
+            "id_patient": "1",
+            "prenom": "Alice",
+            "nom": "Brun",
+            "adresse": "10 rue Lunaret 34000 MONTPELLIER",
+            "date_naissance": "1990-03-10",
+            "sexe": "F",
+            "num_SS": "123456789"
+        }
+    ],
+    "rdv": [
+        {
+            "id_ rdv": "1",
+            "id_ patient": "1",
+            "id_medecin": "1",
+            "date_rdv": "2024-10-10",
+            "heure_debut": "10:00",
+            "heure_fin": "10:30",
+            "motif": "Consultation générale"
+        },
+        
+        {
+            "id_ rdv": "2",
+            "id_ patient": "1",
+            "id_medecin": "2",
+            "date_rdv": "2024-10-17",
+            "heure_debut": "11:00",
+            "heure_fin": "11:30",
+            "motif": "Examen dermatologique"
+        }
+    ]
+    }
